@@ -33,4 +33,4 @@ formula used for calculating T-value
 
 
 For sorting, we used pre built function.
-For finding the common attributes, we compared the columns using an algorithm which we found on the internet
+For finding the common attributes, we compared the columns using an algorithm.
