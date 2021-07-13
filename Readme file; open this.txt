@@ -2,7 +2,7 @@ Report
 
 Raw data
 
-1) the 'archive' zip contains the three intial raw data files.
+1) The 'archive' zip contains the three intial raw data files.
 
 Data Mining
 
