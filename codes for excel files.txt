@@ -1,0 +1,36 @@
+These formulas are for a particular row. The three in B3 will keep on changing gradually as the row changes.
+
+
+formula  used for calculating Sum(ALL)
+=SUMIFS(B3:BU3,$B$2:$BU$2,"ALL",B3:BU3,">=20",B3:BU3,"<=16000")
+
+formula used for calculating Number(ALL)
+=COUNTIFS(B3:BU3,">=20",B3:BU3,"<=16000",$B$2:$BU$2,"ALL")
+
+formula used for calculating Sum(AML)
+=SUMIFS(B3:BU3,$B$2:$BU$2,"AML",B3:BU3,">=20",B3:BU3,"<=16000")
+
+formula used for calculating Number(AML)
+=COUNTIFS(B3:BU3,">=20",B3:BU3,"<=16000",$B$2:$BU$2,"AML")
+
+formula used for calculating AVERAGE(ALL)
+=IF(BW3=0,0,(BV3/BW3))
+
+formula used for calculating AVERAGE(AML)
+=IF(BY3=0,0,(BX3/BY3))
+
+formula used for calculating Standard Deviation(ALL)
+=STDEV.S(IF($B$2:$BU$2="ALL",IF(B3:BU3>=20,IF(B3:BU3<=16000,B3:BU3))))
+
+formula used for calculating Standard Deviation(AML)
+=STDEV.S(IF($B$2:$BU$2="AML",IF(B3:BU3>=20,IF(B3:BU3<=16000,B3:BU3))))
+
+formula used for calculating S2N value
+=IF(OR(BW3=0,BW3=1),0,IF(OR(BY3=0,BY3=1),0,((BZ3-CA3)/(CB3+CC3))))
+
+formula used for calculating T-value
+=IF(OR(BW3=0,BW3=1),0,IF(OR(BY3=0,BY3=1),0,((BZ3-CA3)/POWER((((CB3*CB3)/BW3)+((CC3*CC3)/BY3)),0.5))))
+
+
+For sorting, we used pre built function.
+For finding the common attributes, we compared the columns using an algorithm which we found on the internet
